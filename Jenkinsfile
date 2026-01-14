@@ -4,7 +4,7 @@ stages {
     // NEW STAGE: Pull the source code first!
     stage('pull SCM') {
         steps {
-            echo "Pulling code from GitHub..."
+            echo "Pulling source code from GitHub..."
             // This 'git' step is provided by the Git Plugin
             git url: 'https://github.com/mayur-z/3t-aws.git', branch: 'main'
         }
