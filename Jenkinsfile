@@ -6,7 +6,7 @@ stages {
         steps {
             echo "Pulling source code from GitHub..."
             // This 'git' step is provided by the Git Plugin
-            git url: 'https://github.com/mayur-z/3t-aws.git', branch: 'main'
+            git url: 'https://github.com/atharvsakolkar2025/myawsproject.git', branch: 'main'
         }
     }
 
@@ -15,7 +15,7 @@ stages {
             // Let's run a real command now that we have the code
             // 'sh' is a step for running a shell command on Linux/macOS
             sh 'ls -l'
-            sh 'my ktree'
+            sh 'tree'
             sh 'pwd'
             echo "In a real build, we'd run 'mvn clean install'."
         }
